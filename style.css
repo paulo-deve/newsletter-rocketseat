@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;700&family=Work+Sans:wght@700&display=swap');
+
+:root {
+  --body-bg-color: #121214;
+  --text-color: #E1E1E6;
+  --title-color: #04D361;
+  --form-color: #A8A8A8;
+  --bg-button-color: #8257e5;
+}
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  background: url("./assets/read_news.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content .nav {
+  padding: 50px 0 0 0;
+}
+
+.content .nav .logo img {
+  width: 390px;
+  height: 95px;
+}
+
+.wrapper-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.wrapper-container .content {
+  width: 720px;
+  padding-left: 30px;
+  background: var(--body-bg-color);
+}
+
+.wrapper-container .content .main-text {
+  margin-top: 92px;
+  width: 650px;
+}
+
+.content .main-text h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.content .main-text h4, p {
+  margin-top: 9px;
+  font-family: 'Spartan', sans-serif;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.content .main-text h4 {
+  font-weight: 700;
+}
+
+.content .main-text p {
+  font-weight: 400;
+}
+
+.content .form {
+  margin-top: 50px;
+}
+
+.form .input-label {
+  font-family: 'Spartan', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form .input {
+  margin-top: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 120%;
+
+  background: #FFF;
+  border-left: 5px solid var(--title-color);
+
+  padding-left: 10px;
+
+  z-index: 100;
+}
+
+.form .input input {
+  width: 50%;
+  background: transparent;
+  font-size: 12px;
+
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  color: var(--title-color);
+
+  outline: none;
+}
+
+.form .input input::placeholder {
+  color: var(--form-color);
+}
+
+.form .input img {
+  background: var(--bg-button-color);
+  padding: 15px;
+  cursor: pointer;
+}
+
+.content .call-to-action {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+
+  margin-top: 50px;
+  color: var(--bg-button-color);
+  cursor: pointer;
+}
+
+.content .call-to-action a {
+  color: var(--bg-button-color);
+  text-decoration: none;
+}
